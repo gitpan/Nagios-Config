@@ -1,0 +1,6 @@
+Revision history for Perl extension Nagios::Config.
+
+0.01  Wed Jun 11 11:15:02 2003
+	- original version; created by h2xs 1.20 with options
+		-A Nagios::Config
+

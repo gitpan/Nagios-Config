@@ -1,0 +1,50 @@
+INTRODUCTION:
+
+Nagios::Config - Parse Nagios configuration files
+
+Example:
+
+	use Nagios::Config ;
+	my $nc = new Nagios::Config("/usr/local/nagios/nagios.cfg") ;
+	foreach ($nc->get_objects('host')){
+		print $_->get('host_name') . "\n" ;
+	}
+
+
+-------------------------------------------------------------------------------
+INSTALLATION:
+
+
+To install Nagios::Config do this:
+
+  % perl Makefile.PL 
+  % make
+  % make test
+  % make install
+
+You have to 'make install' before you can run it successfully. 
+
+
+-------------------------------------------------------------------------------
+FEATURES:
+
+WARNING: THIS IS ALPHA SOFTWARE. It is incomplete and possibly unreliable. 
+         It is also possible that some elements of the interface (API) will 
+         change in future releases.
+
+Nagios::Config 0.01 includes:
++ Extracts information form all template-based object types.
++ Expands all templates "use"d.
+
+
+-------------------------------------------------------------------------------
+INFORMATION:
+
+For more information on Nagios::Config, see 'perldoc Nagios::Config'.
+
+Nagios::Config's mailing list is nagios-devel@lists.sourceforge.net
+To subscribe, visit http://lists.sourceforge.net/lists/listinfo/nagios-devel
+
+Please send questions and comments to Patrick LeBoutillier <patl@cpan.org>.
+
+Copyright (c) 2003, Patrick LeBoutillier. All Rights Reserved.  
